@@ -11,6 +11,18 @@ Summary: Design of experiments for Python
 
 The pyDOE package is designed to help the scientist, engineer, statistician, etc., to construct appropriate experimental designs.
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pydoe-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydoe-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pydoe-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pydoe-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pydoe-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pydoe-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydoe/badges/version.svg)](https://anaconda.org/conda-forge/pydoe)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydoe/badges/downloads.svg)](https://anaconda.org/conda-forge/pydoe)
+
 Installing pydoe
 ================
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pydoe-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydoe-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pydoe-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pydoe-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pydoe-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pydoe-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydoe/badges/version.svg)](https://anaconda.org/conda-forge/pydoe)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydoe/badges/downloads.svg)](https://anaconda.org/conda-forge/pydoe)
 
 
 Updating pydoe-feedstock
