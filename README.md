@@ -14,14 +14,15 @@ The pyDOE package is designed to help the scientist, engineer, statistician, etc
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pydoe-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydoe-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pydoe-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pydoe-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pydoe-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pydoe-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pydoe-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pydoe-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydoe/badges/version.svg)](https://anaconda.org/conda-forge/pydoe)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydoe/badges/downloads.svg)](https://anaconda.org/conda-forge/pydoe)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pydoe-green.svg)](https://anaconda.org/conda-forge/pydoe) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pydoe.svg)](https://anaconda.org/conda-forge/pydoe) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pydoe.svg)](https://anaconda.org/conda-forge/pydoe) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pydoe.svg)](https://anaconda.org/conda-forge/pydoe) |
 
 Installing pydoe
 ================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
