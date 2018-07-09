@@ -10,11 +10,13 @@ source:
     sha1: 211c4d74a74109ac134dff31ed20c33141b48dbe
 
 build:
-  script: python setup.py install --single-version-externally-managed --record=record.txt
-  number: 0
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
 
