@@ -6,26 +6,28 @@ package:
 
 source:
     fn: pyDOE-{{ version }}.zip
-    url: https://pypi.io/packages/source/p/pyDOE/pyDOE-{{ version }}.zip
+    url: https://pypi.org/packages/source/p/pyDOE/pyDOE-{{ version }}.zip
     sha1: 211c4d74a74109ac134dff31ed20c33141b48dbe
 
 build:
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
-  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 2
 
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python
+    - python >={{ python_min }}
     - scipy >=0.13
     - numpy >=1.8
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyDOE
 
