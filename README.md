@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydoe-feedstock
 
 Home: https://github.com/tisimst/pyDOE
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Summary: Design of experiments for Python
 
@@ -145,6 +145,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@laraibg786](https://github.com/laraibg786/)
 * [@melund](https://github.com/melund/)
 * [@saudzahirr](https://github.com/saudzahirr/)
 
