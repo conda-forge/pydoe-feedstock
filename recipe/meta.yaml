@@ -1,4 +1,4 @@
-{% set version = "0.9.8" %}
+{% set version = "0.9.9" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pydoe/pydoe-{{ version }}.tar.gz
-  sha256: 806aecd0f1e397f5c4a59eef4d282fda73cdbcdf1aab3de7a681bfc4ceef5b51
+  sha256: e66f42d2ffe2a9d24563f845a2786d05222f839ec0db75199f0270638794df51
 
 build:
   noarch: python
