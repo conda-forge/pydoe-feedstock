@@ -1,13 +1,17 @@
 {% set version = "0.9.9" %}
 {% set python_min = "3.11" %}
 
+# NOTE: the min py version is bumped to 3.11 (3.10 in src dist) to satisfy the
+# scipy dependency. scipy versions on conda-forge has 1.15.2 less than min scipy
+# version and 1.16.0 requiring min py 3.11
+
 package:
   name: pydoe
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/p/pydoe/pydoe-{{ version }}.tar.gz
-  sha256: e66f42d2ffe2a9d24563f845a2786d05222f839ec0db75199f0270638794df51
+  git_url: https://github.com/pydoe/pydoe
+  git_rev: v{{ version }}
 
 build:
   noarch: python
@@ -29,15 +33,24 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pytest
+    - pytest-xdist
   imports:
-    - pyDOE
+    - pydoe
+  commands:
+    - pytest --pyargs pydoe -v -n auto --doctest-modules --no-header -p no:cacheprovider
 
 about:
-  home: https://github.com/tisimst/pyDOE
+  home: https://github.com/pydoe/pydoe
   license: BSD-3-Clause
   license_file: LICENSE
   summary: Design of experiments for Python
-  description: The pyDOE package is designed to help the scientist, engineer, statistician, etc., to construct appropriate experimental designs.
+  description: |
+     pydoe is a package for constructing experimental designs, supporting
+     factorial designs, response surface methods, optimal designs, space-filling
+     designs, Taguchi methods, sparse grids, and sensitivity analysis.
+  doc_url: https://pydoe.github.io/pydoe/
+  dev_url: https://github.com/pydoe/pydoe
 
 extra:
   recipe-maintainers:

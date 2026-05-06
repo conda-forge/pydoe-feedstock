@@ -3,13 +3,20 @@ About pydoe-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydoe-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/tisimst/pyDOE
+Home: https://github.com/pydoe/pydoe
 
 Package license: BSD-3-Clause
 
 Summary: Design of experiments for Python
 
-The pyDOE package is designed to help the scientist, engineer, statistician, etc., to construct appropriate experimental designs.
+Development: https://github.com/pydoe/pydoe
+
+Documentation: https://pydoe.github.io/pydoe/
+
+pydoe is a package for constructing experimental designs, supporting
+factorial designs, response surface methods, optimal designs, space-filling
+designs, Taguchi methods, sparse grids, and sensitivity analysis.
+
 
 Current build status
 ====================
