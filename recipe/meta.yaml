@@ -1,9 +1,5 @@
 {% set version = "0.9.9" %}
-{% set python_min = "3.11" %}
-
-# NOTE: the min py version is bumped to 3.11 (3.10 in src dist) to satisfy the
-# scipy dependency. scipy versions on conda-forge has 1.15.2 less than min scipy
-# version and 1.16.0 requiring min py 3.11
+{% set python_min = "3.10" %}
 
 package:
   name: pydoe
@@ -27,7 +23,9 @@ requirements:
 
   run:
     - python >={{ python_min }}
-    - scipy >=1.15.3
+    # The pinned version on upstream [1.15.3] is not released on conda-forge
+    # so last stable version is pinned as base. see pydoe/pydoe#109
+    - scipy >=1.15.2
     - numpy >=2.2.6
 
 test:
